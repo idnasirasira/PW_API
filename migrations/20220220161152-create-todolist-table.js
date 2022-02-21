@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  async up (queryInterface, Sequelize) {
-    await queryInterface.createTable('todo_list', {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.createTable("todo_list", {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -24,11 +24,11 @@ module.exports = {
       updatedAt: {
         type: Sequelize.DATE,
         allowNull: true,
-      }
-    })
+      },
+    });
   },
 
-  async down (queryInterface, Sequelize) {
-     await queryInterface.dropTable('todo_list');
-  }
+  async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable("todo_list");
+  },
 };
