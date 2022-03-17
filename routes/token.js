@@ -71,7 +71,7 @@ router.post("/", async (req, res, next) => {
             },
             process.env.ACCESS_TOKEN_SECRET,
             {
-              expiresIn: "60s",
+              expiresIn: "120s",
             }
           );
 
